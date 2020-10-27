@@ -1,10 +1,5 @@
 pipeline {
-     agent {
-          docker {
-               image 'stefanscherer/node-windows' 
-               args '-p 33333:9000' 
-          }
-     }
+     agent { label 'master' }
      environment {
           HOME = '.'
      }
