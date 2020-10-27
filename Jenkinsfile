@@ -1,7 +1,7 @@
 pipeline {
      agent {
           docker {
-               image 'node:alpine' 
+               image 'stefanscherer/node-windows' 
                args '-p 33333:9000' 
           }
      }
